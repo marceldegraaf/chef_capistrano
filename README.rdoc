@@ -4,6 +4,8 @@ This repository is a collection of config files and cookbooks that allow you to 
 server and deploy your Rails app with Chef and Capistrano. In literally two local commands
 your server will be up and running and your app will be deployed.
 
+== How do I use it?
+
 To be able to provision the server and deploy your app, you'll need to set up some stuff in
 your Rails project. Follow these steps:
 
@@ -27,4 +29,10 @@ That's it!
 
 == Technical notes
 
-They will go here.
+This collection of scripts and cookbooks is highly opinionated. They assume *Ubuntu 10.04 LTS*, *mysql*, *nginx* and *Passenger*. The tasks have been tested on a fresh Linode server without StackScripts and a vanilla Ubuntu 10.04 LTS installation. Other distributions may work, YMMV.
+
+The <tt>passenger_nginx</tt> cookbook was created by myself, based on the <tt>nginx</tt> cookbook by Opscode and the <tt>passenger_nginx</tt> cookbook by @agoddard. All other cookbooks are from the offical Opscode repository.
+
+== I can do better!
+
+My experience with Chef is limited. It may well be that these cookbooks have been set up abysmally. If this is the case: please let me know! Pull requests are welcome, as are private messages with tips. Thanks!
