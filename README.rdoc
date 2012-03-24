@@ -10,3 +10,21 @@ your Rails project. Follow these steps:
 1. Add <tt>capistrano</tt> and <tt>capistrano_chef_solo</tt> to your Gemfile. See the Gemfile in this repository for an example.
 
 2. <tt>bundle install</tt> and <tt>capify .</tt>
+
+3. Require <tt>capistrano_chef_solo</tt> in your <tt>Capfile</tt>. See the Capfile in this repository for an example.
+
+4. Edit <tt>config/deploy.rb</tt> to reflect your application. Please make sure to check if all variables have been set. See the <tt>deploy.rb</tt> in this repository for an example.
+
+That's it! You're now ready to provision your server and deploy your app at one fell swoop. Well, two fell swoops actually. The first command adds the <tt>deploy</tt> user to your server. *Note*: the password for the deploy user is chosen randomly for you. It is echoed on the command line when the user is created. Please note it carefully. You'll need a root password to run this command:
+
+  cap setup:deploy_user
+
+Now you're ready to run the provisioning and deployment tasks. To do so:
+
+  cap deploy
+
+That's it!
+
+== Technical notes
+
+They will go here.
