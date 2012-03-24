@@ -1,0 +1,13 @@
+= Chef/Capistrano
+
+This repository is a collection of config files and cookbooks that allow you to provision a
+server and deploy your Rails app with Chef and Capistrano. In literally two local commands
+your server will be up and running and your app will be deployed.
+
+To be able to provision the server and deploy your app, you'll need to set up some stuff in
+your Rails project. Follow these steps:
+
+1. Add <tt>capistrano</tt> and <tt>capistrano_chef_solo</tt> to your Gemfile. See the Gemfile
+in this repository for an example.
+
+2. <tt>bundle install</tt> and <tt>capify .</tt>

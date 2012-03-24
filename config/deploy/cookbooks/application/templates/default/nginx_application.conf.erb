@@ -1,0 +1,14 @@
+server {
+    listen               80;
+    server_name          <%= @server_name %>;
+    access_log           /var/log/<%= @server_name %>.access.log;
+    client_max_body_size <%= @client_max_body_size %>;
+    keepalive_timeout    <%= @keepalive_timeout %>;
+    root                 <%= @public_dir %>;
+    passenger_enabled    on;
+
+    error_page   500 502 503 504 /50x.html;
+    location = /50x.html {
+      root <%= @public_dir %>;
+    }
+}
