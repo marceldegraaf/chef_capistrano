@@ -13,7 +13,7 @@ your Rails project. Follow these steps:
 
 2. <tt>bundle install</tt> and <tt>capify .</tt>
 
-3. Require <tt>capistrano_chef_solo</tt> in your <tt>Capfile</tt>. See the Capfile in this repository for an example.
+3. Require <tt>capistrano_chef_solo</tt> in your Capfile. See the Capfile in this repository for an example.
 
 4. Edit <tt>config/deploy.rb</tt> to reflect your application. Please make sure to check if all variables have been set. See the <tt>deploy.rb</tt> in this repository for an example.
 
